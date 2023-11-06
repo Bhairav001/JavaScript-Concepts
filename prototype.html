@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <h1>Protoype and inheritance</h1>
+            <input type="text" id="text" placeholder="enter string">
+            <button onclick="handleClick()">REVERSE</button>
+            <h2 id="heading"></h2>
+        </div>
+    </body>
+</html>
+<script>
+     function handleClick(){
+        let str = document.querySelector("#text").value;
+        
+        // let revs="";
+        // for(let i=str.length-1; i>=0; i--){
+        //     revs=revs+str[i]
+        // }
+        // console.log(revs)
+    //   str.split("").reverse().join("")
+    let newStr=  str.split("").reverse().join("");
+    //    console.log(newStr)
+    //     let heading = document.getElementById("heading")
+    //     heading.innerText=`This is reverse string: ${revs}`
+     }
+    let object = {
+        name:"Gotam"
+    }
+    // console.log(object)
+
+    //object literal 
+    //what are contructors
+
+
+    var PuneData ={
+        name:"nigdi",
+        age:45,
+        rollNo:99,
+        city:function(a,n){
+            this.ok=a,
+            this.no=n
+        }
+    }
+  let x= new PuneData.city("noonw","some")
+//   console.log(x)
+
+//prototype 
+
+/*
+1. How inheritance makes coding efficient
+2. How do we achive Inheritance in Js
+3. Object.create() method
+4. Everything in Js is Object
+5. Prototye Chain
+6. Prototype method availabe on the contructor function
+7. Creating your own array library
+
+
+what is prototype
+A blueprint
+AN original object from which a new object is created
+
+
+what is inheritance
+In simple terms, Inheritance is the concept of one thing gaining he properties of behavioius of something else
+
+
+TO say A inheritance from B, is Saying that A is type of B.
+
+
+
+
+*/
+//   let object1={
+//     name:"bike"
+//   }
+//   console.log(object1);
+
+  function Person(name){
+       this.name=name;
+  }
+
+  Person.prototype.sayHello=function(){
+    console.log(this.name)
+  }
+
+  const person1 = new Person("bhairav");
+
+  person1.sayHello();
+
+</script>
