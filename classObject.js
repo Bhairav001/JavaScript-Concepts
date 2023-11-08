@@ -28,3 +28,26 @@ bhairav.submit()
 rohan.submit();
 
 rohan.cancel()
+
+
+let arr =[
+    {
+        name:"bhairav",
+        age:35
+    },
+    {
+        name:"ramesh",
+        age:33
+    },
+    {
+        name:"omkar",
+        age:22
+    }
+]
+
+arr.sort((a,b)=>{
+   if(a.age>b.age) return -1
+   if(a.age<b.age) return 1
+   return 0
+})
+console.log(arr)
