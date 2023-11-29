@@ -20,4 +20,10 @@ State-
    inside componts its wrirte jszx, and jsx return javascript object sand its
    display on DOM as we can say virtul DOM
    component are state so we can change the data inside components withe the state. and react-dom api
+
+
+
+   mouting - initialization, loading the ui 
+   updating - update something, state and props change something
+   unmoung - distroy or removing something
 */
