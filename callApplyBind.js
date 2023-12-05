@@ -31,4 +31,4 @@ greet.call(nameObject,"hi")
 greet.apply(nameObject,["awasome"])
 
 let varableObject = greet.bind(nameObject,"someawasome")
-varableObject()
+varableObject();
